@@ -5,7 +5,7 @@ git-dot
 
 This utility generates a graph in the
 `dot format <http://www.graphviz.org/doc/info/lang.html>`_
-showing the `Git <http://git-scm.com>` history.
+showing the `Git <http://git-scm.com>`_ history.
 
 Install
 -------
