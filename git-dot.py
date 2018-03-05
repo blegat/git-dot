@@ -107,7 +107,7 @@ def create_graph(file_name):
       git_log('%P').split('\n')):
     sha = cut_sha(full_sha)
     graph.write_node(sha, "skyblue4", "slategray1",
-    '{}\\n{}'.format(sha,title))
+    '{}\\n{}'.format(sha, title.replace('"', '\\"')))
     for parent in parents.split():
       graph.link_nodes(sha, cut_sha(parent))
 
