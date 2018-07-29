@@ -19,7 +19,7 @@ setup(name='git-dot',
   install_requires = [
     'PyYAML',
     ],
-  py_modules=['git-dot', '__version__'],
+  py_modules=['git_dot', '__version__'],
   entry_points=dict(console_scripts=['git-dot=git_dot:main',
     'git-dot-%s=git_dot:main' % sys.version[:3]]),
   classifiers = [
