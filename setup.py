@@ -8,7 +8,7 @@ from __version__ import version
 with open('README.rst') as file:
   long_description = file.read()
 
-setup(name='smartcp',
+setup(name='git-dot',
   version=version,
   description='Convert Git History to a Dot File',
   author='Benoît Legat',
@@ -20,8 +20,8 @@ setup(name='smartcp',
     'PyYAML',
     ],
   py_modules=['git-dot', '__version__'],
-  entry_points=dict(console_scripts=['git-dot=git-dot:main',
-    'git-dot-%s=git-dot:main' % sys.version[:3]]),
+  entry_points=dict(console_scripts=['git-dot=git_dot:main',
+    'git-dot-%s=git_dot:main' % sys.version[:3]]),
   classifiers = [
     'Development Status :: 4 - Beta',
     'Environment :: Console',
